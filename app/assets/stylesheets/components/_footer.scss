@@ -1,0 +1,36 @@
+#footer {
+  background: #070707;
+  padding: 30px 0;
+  color: #CCCCCC;
+}
+#footer p {
+  margin-top: 17px;
+  color: #D1CCCC;
+}
+#footer ul {
+  margin-top: 10px;
+}
+#footer a {
+  color: #CCCCCC;
+  font-size: 30px;
+  letter-spacing: 20px;
+  transition: color 0.5s ease;
+}
+#footer a:hover{
+  color:#E20909;
+}
+
+#footer img{
+  height: 100px;
+}
+
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
