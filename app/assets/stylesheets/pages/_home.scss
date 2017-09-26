@@ -3,15 +3,52 @@ body {
   background-color:white;
 }
 .head img{
-  height: 150px;
+  height: 100px;
   padding-bottom: 20px;
 }
-.intro img{
-  height: 300px;
+.intro h1{
+  font-size: 70px;
 }
-  .intro h1{
+
+.push:hover{
+  background-image:url(tslc.jpg) !important;;
+  background-size: cover !important;
+  color:#FDB631;
+  border: 3px solid black;
+}
+.push2:hover{
+  background-image:url(smile.jpg) !important;;
+  background-size: cover !important;
+  color:#FDB631;
+  border: 3px solid black;
+}
+.push3:hover{
+  background-image:url(grap.jpg) !important;;
+  background-size: cover !important;
+  color:#FDB631;
+  border: 3px solid black;
+}
+.banner {
+  color: white;
   text-align: left;
+  height:calc(100vh - 80px);;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 40px;
 }
-.intro p {
-  text-align: justify;
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align:left;
+}
+.banner p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+.wrapped h6{
+  color: #FDB631;
 }
