@@ -9,23 +9,28 @@ body {
 .intro h1{
   font-size: 70px;
 }
-
-.push:hover{
-  background-image:url(tslc.jpg) !important;;
-  background-size: cover !important;
+.push h1{
   color:#FDB631;
+}
+.push:hover{
+  background-image:url(tslc.jpg) ;
+  background-size: cover !important;
   border: 3px solid black;
+}
+.push2 h1{
+  color:#FDB631;
 }
 .push2:hover{
-  background-image:url(smile.jpg) !important;;
+  background-image:url(grap.jpg) ;
   background-size: cover !important;
-  color:#FDB631;
   border: 3px solid black;
 }
-.push3:hover{
-  background-image:url(grap.jpg) !important;;
-  background-size: cover !important;
+.push3 h1{
   color:#FDB631;
+}
+.push3:hover{
+  background-image: url(smile.jpg);
+  background-size: cover !important;
   border: 3px solid black;
 }
 .banner {

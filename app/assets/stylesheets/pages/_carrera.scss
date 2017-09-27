@@ -6,11 +6,17 @@
   color: #FDB631;
 }
 .card{
-  height:calc(60vh - 80px);;
-  background-size: cover !important;
   color: white;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-size: cover !important;
+  position:relative
+}
+.card h3{
+  color:#FDB631;
 }
 .card-content{
-  padding-top: 60px;
+  padding-top: 30px;
   padding-left: 10px;
 }
