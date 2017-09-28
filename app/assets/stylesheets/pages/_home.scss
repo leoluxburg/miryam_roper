@@ -2,6 +2,9 @@
 body {
   background-color:white;
 }
+.paint{
+  color:#FDB631;
+}
 .head img{
   height: 100px;
   padding-bottom: 20px;
@@ -16,6 +19,7 @@ body {
   background-image:url(tslc.jpg) ;
   background-size: cover !important;
   border: 3px solid black;
+
 }
 .push2 h1{
   color:#FDB631;
@@ -38,6 +42,17 @@ body {
   text-align: left;
   height:calc(100vh - 80px);;
   background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 40px;
+}
+.banner2 {
+  color: white;
+  text-align: left;
+  height:calc(100vh - 80px);;
+  background-size: cover !important;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: left;
