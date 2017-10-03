@@ -13,8 +13,9 @@ class LettersController < ApplicationController
   end
 
   def create
-    @letter = Letter.new(params[:letter])
+    @letter = Letter.create(letter_params)
     @letter.save
+    redirect_to root_path
   end
 
   def destroy
@@ -25,7 +26,7 @@ class LettersController < ApplicationController
 
   private
 
-  def album_params
+  def letter_params
     params.require(:letter).permit(:name, :email, :message)
   end
 
