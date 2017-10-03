@@ -10,7 +10,7 @@
     <p><%= link_to "Biografia", pages_biografia_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
     <p><%= link_to "Carrera", pages_carrera_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
     <p><%= link_to "Videos", pages_videos_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
-    <p><%= link_to "Contact", pages_contact_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
+    <p><%= link_to "Contact", new_letter_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
@@ -18,10 +18,12 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
-      </ul>
+       <li> <p><%= link_to "Home", root_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
+        <li><p><%= link_to "Biografia", pages_biografia_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
+        <li><p><%= link_to "Carrera", pages_carrera_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
+        <li><p><%= link_to "Videos", pages_videos_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
+       <li><p><%= link_to "Contact", new_letter_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
+      </ul></li>
     </div>
   </div>
 </div>
