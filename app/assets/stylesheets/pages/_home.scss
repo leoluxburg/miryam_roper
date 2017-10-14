@@ -6,9 +6,7 @@ body {
   background-color:#F4F4F4;
 }
 
-.paint{
-  color:#FDB631;
-}
+
 .head img{
   height: 100px;
   padding-bottom: 20px;
@@ -16,14 +14,12 @@ body {
 .intro h1{
   font-size: 70px;
 }
+
 .push h1{
-  color:#FDB631;
+  color:#FE9635;
 }
-.push2 h1{
-  color:#FDB631;
-}
-.push3 h1{
-  color:#FDB631;
+.intro h1:hover{
+  font-size: 90px;
 }
 .banner {
   color: white;
@@ -57,6 +53,6 @@ body {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
 }
-.wrapped h6{
-  color: #FDB631;
+.wrapped h5{
+  color:#FE9635;
 }
