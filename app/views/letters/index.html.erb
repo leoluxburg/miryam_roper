@@ -1,0 +1,12 @@
+<div class="">
+  <div class="container">
+    <h1>Letters</h1>
+    <% @letters.each do |letter|  %>
+    <div class="col-xs-12">
+    <%= link_to letter_path(letter) do %>
+    <p><%= letter.name%> || <%= letter.email%></i></p>
+    <%end%>
+    </div>
+    <% end %>
+  </div>
+</div>

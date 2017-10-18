@@ -1,4 +1,4 @@
-<div class="navbar-wagon navbar-wagon-fixed">
+<div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
   <%= image_tag('mr.png') %>
@@ -10,7 +10,10 @@
     <p><%= link_to "Biografia", pages_biografia_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
     <p><%= link_to "Carrera", pages_carrera_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
     <p><%= link_to "Videos", pages_videos_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
-    <p><%= link_to "Contact", pages_contact_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
+    <p><%= link_to "Contacto", pages_contact_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
+    <% if current_user %>
+    <p><%= link_to "Mensajes", letters_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
+    <% end %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
