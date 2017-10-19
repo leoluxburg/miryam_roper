@@ -1,33 +1,24 @@
-<div class="navbar-wagon">
+<div class="navbar-wagon navbar-wagon-fixed">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
   <%= image_tag('mr.png') %>
   <% end %>
-
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <p><%= link_to "Home", root_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
-    <p><%= link_to "Biografia", pages_biografia_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
-    <p><%= link_to "Carrera", pages_carrera_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
-    <p><%= link_to "Videos", pages_videos_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
-    <p><%= link_to "Contacto", pages_contact_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
-    <% if current_user %>
-    <p><%= link_to "Mensajes", letters_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
-    <% end %>
-  </div>
-
-  <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-       <li> <p><%= link_to "Home", root_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
-        <li><p><%= link_to "Biografia", pages_biografia_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
-        <li><p><%= link_to "Carrera", pages_carrera_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
-        <li><p><%= link_to "Videos", pages_videos_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
-       <li><p><%= link_to "Contact", new_letter_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
-      </ul></li>
-    </div>
-  </div>
+  <div class="dropdown">
+    <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+    <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+     <li> <p><%= link_to "Home", root_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
+     <li><p><%= link_to "Biografia", pages_biografia_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
+     <li><p><%= link_to "Carrera", pages_carrera_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
+     <li><p><%= link_to "Videos", pages_videos_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
+     <li><p><%= link_to "Contact", pages_contact_path, class: "navbar-wagon-item navbar-wagon-link"%></p></li>
+     <% if current_user %>
+     <p><%= link_to "Mensajes", letters_path, class: "navbar-wagon-item navbar-wagon-link"%></p>
+     <%= link_to destroy_user_session_path, method: :delete do %>
+     <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
+     <% end %>
+     <% end %>
+   </ul>
+ </div>
 </div>
+
 
